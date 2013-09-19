@@ -296,11 +296,14 @@ namespace AssemblyCSharp
 			}
 		}
 		
-		public void sendBytes(byte[] msg)
+		public void sendBytes(byte[] msg, bool useUDP)
 		{
 			if(state == 1)
 			{	
-				WarpClient.GetInstance().SendUDPUpdatePeers(msg);
+				if(useUDP == true)
+					WarpClient.GetInstance().SendUDPUpdatePeers(msg);
+				else
+					WarpClient.GetInstance().SendUpdatePeers(msg);
 			}
 		}
 	}

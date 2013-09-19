@@ -19,6 +19,9 @@ public class appwarp : MonoBehaviour
 	public static string secretKey = "bf45f27e826039754f8dda659166d59ffb7b9dce830ac51d6e6b576ae4b26f7e";
 	public static string roomid = "1440375425";
 	public static string username = "";
+	
+	public bool useUDP = true;
+	
 	Listener listen;
 	
 	public Transform remotePrefab;
@@ -68,7 +71,7 @@ public class appwarp : MonoBehaviour
 			System.Buffer.BlockCopy(data_f,0,data,0,sizeof(float)*9);
 			System.Buffer.BlockCopy(username.ToCharArray(),0,data,sizeof(float)*9,username.Length*sizeof(char));
 	
-			listen.sendBytes(data);
+			listen.sendBytes(data, useUDP);
 			
 			timer = interval;
 		}
