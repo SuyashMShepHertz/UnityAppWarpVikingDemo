@@ -42,7 +42,7 @@ namespace AssemblyCSharp
 		{
 			if(eventObj.getResult() == 0)
 			{
-				WarpClient.GetInstance().SubscribeRoom(appwarp.roomid);
+				WarpClient.GetInstance().SubscribeRoom(m_apppwarp.roomid);
 			}
 			Log ("onConnectDone : " + eventObj.getResult());
 			
@@ -142,7 +142,7 @@ namespace AssemblyCSharp
 				/*string json = "{\"start\":\""+id+"\"}";
 				WarpClient.GetInstance().SendChat(json);
 				state = 1;*/
-				WarpClient.GetInstance().JoinRoom(appwarp.roomid);
+				WarpClient.GetInstance().JoinRoom(m_apppwarp.roomid);
 			}
 			
 			Log ("onSubscribeRoomDone : " + eventObj.getResult());

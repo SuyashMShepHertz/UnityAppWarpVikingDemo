@@ -15,9 +15,9 @@ using AssemblyCSharp;
 
 public class appwarp : MonoBehaviour 
 {
-	public static string apiKey = "b29f4030aba3b2bc7002c4eae6815a4130c862c386e43ae2a0a092b27de1c5af";
-	public static string secretKey = "bf45f27e826039754f8dda659166d59ffb7b9dce830ac51d6e6b576ae4b26f7e";
-	public static string roomid = "1440375425";
+	public string apiKey = "b29f4030aba3b2bc7002c4eae6815a4130c862c386e43ae2a0a092b27de1c5af";
+	public string secretKey = "bf45f27e826039754f8dda659166d59ffb7b9dce830ac51d6e6b576ae4b26f7e";
+	public string roomid = "1440375425";
 	public static string username = "";
 	
 	public bool useUDP = true;
