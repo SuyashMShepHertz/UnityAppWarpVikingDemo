@@ -47,6 +47,7 @@ namespace AssemblyCSharp
 			Log ("onConnectDone : " + eventObj.getResult());
 			
 			gameObject.name = appwarp.username;
+			WarpClient.GetInstance().initUDP();
 		}
 		
 		public void onLog(String message){
@@ -274,6 +275,7 @@ namespace AssemblyCSharp
 		{
 			//Log ("onUpdatePeersReceived");
 			m_apppwarp.onBytes(eventObj.getUpdate());
+			//Log("isUDP " + eventObj.getIsUdp());
 		}
 		
 		public void onUserChangeRoomProperty(RoomData roomData, string sender, Dictionary<String, System.Object> properties)
