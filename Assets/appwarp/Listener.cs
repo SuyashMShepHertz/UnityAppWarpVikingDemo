@@ -267,7 +267,7 @@ namespace AssemblyCSharp
 		
 		public void onChatReceived (ChatEvent eventObj)
 		{
-			Log(eventObj.getSender() + " sended Message");
+			Log(eventObj.getSender() + " sent Message");
 			m_apppwarp.onMsg(eventObj.getSender(), eventObj.getMessage());
 		}
 		
@@ -280,7 +280,7 @@ namespace AssemblyCSharp
 		
 		public void onUserChangeRoomProperty(RoomData roomData, string sender, Dictionary<String, System.Object> properties)
         {
-            Log("Notification for User Changed Room Propert received");
+            Log("Notification for User Changed Room Property received");
             Log(roomData.getId());
             Log(sender);
             foreach (KeyValuePair<String, System.Object> entry in properties)
