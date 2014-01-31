@@ -1,0 +1,16 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench ActiveDocument="..\UnityMDLerpzAuthServer\Assets\Plugins\uLink\Utility Scripts\uLinkSimpleServer.cs">
+    <Files>
+      <File FileName="..\UnityMDLerpzAuthServer\Assets\Resources\uLinkNetworkPrefs.cs" Line="14" Column="36" />
+      <File FileName="..\UnityMDLerpzAuthServer\Assets\Networking Scripts\AuthSpawnPrefab.cs" Line="14" Column="38" />
+      <File FileName="..\UnityMDLerpzAuthServer\Assets\Networking Scripts\OwnerInit.cs" Line="1" Column="1" />
+      <File FileName="..\UnityMDLerpzAuthServer\Assets\Plugins\uLink\Utility Scripts\uLinkSmoothCharacter.cs" Line="124" Column="30" />
+      <File FileName="..\UnityMDLerpzAuthServer\Assets\Plugins\uLink\Utility Scripts\uLinkSimpleServer.cs" Line="16" Column="30" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
