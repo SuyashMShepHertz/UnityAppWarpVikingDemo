@@ -310,6 +310,14 @@ namespace AssemblyCSharp
 		{
 		}
 
+		public void onInvokeZoneRPCDone(RPCEvent evnt)
+		{
+		}
+
+		public void onInvokeRoomRPCDone(RPCEvent evnt)
+		{
+		}
+
 		public void sendMsg(string msg)
 		{
 			if(state == 1)
