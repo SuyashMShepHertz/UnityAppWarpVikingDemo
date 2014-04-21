@@ -141,6 +141,7 @@ public class appwarp : MonoBehaviour
 				Object newRemote = Instantiate(remotePrefab, new Vector3(data_f[0],data_f[1],data_f[2]) ,Quaternion.identity);
 				newRemote.name = sender;
 			}
+			else
 			{
 				RemoteThirdPersonSmooth rtps = remote.GetComponent<RemoteThirdPersonSmooth>();
 				rtps.SetTransform(new Vector3(data_f[0],data_f[1],data_f[2]),new Vector3(data_f[3],data_f[4],data_f[5]),new Vector3(data_f[6],data_f[7],data_f[8]));
