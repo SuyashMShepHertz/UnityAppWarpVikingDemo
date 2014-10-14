@@ -281,6 +281,10 @@ namespace AssemblyCSharp
 			m_apppwarp.onBytes(eventObj.getUpdate());
 			//Log("isUDP " + eventObj.getIsUdp());
 		}
+
+		public void onSendPrivateUpdateDone(byte result)
+		{
+		}
 		
 		public void onUserChangeRoomProperty(RoomData roomData, string sender, Dictionary<String, System.Object> properties)
         {
@@ -293,6 +297,32 @@ namespace AssemblyCSharp
                 Log("VALUE:" + entry.Value.ToString());
             }
         }
+
+		public void onUserPaused(String locid, Boolean isLobby, String username)
+		{
+		}
+		
+		public void onUserResumed(String locid, Boolean isLobby, String username)
+		{
+		}
+		
+		public void onGameStarted(string sender, string roomId, string nextTurn)
+		{
+		}
+		
+		public void onGameStopped(string sender, string roomId)
+		{
+		}
+		
+		public void onPrivateUpdateReceived(String sender, byte[] update, bool fromUdp)
+		{
+			
+		}
+		
+		public void onNextTurnRequest(String lastTurn)
+		{
+			
+		}
 	
 		public void sendMsg(string msg)
 		{
@@ -311,22 +341,6 @@ namespace AssemblyCSharp
 				else
 					WarpClient.GetInstance().SendUpdatePeers(msg);
 			}
-		}
-
-		public void onUserPaused(string a, bool b, string c)
-		{
-		}
-		
-		public void onUserResumed(string a, bool b, string c)
-		{
-		}
-		
-		public void onGameStarted(string a, string b, string c)
-		{
-		}
-		
-		public void onGameStopped(string a, string b)
-		{
 		}
 	}
 }
